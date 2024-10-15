@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('https://st5.depositphotos.com/76344838/64190/i/450/depositphotos_641906582-stock-photo-beautiful-view-blue-sky-clouds.jpg');
+    background-size: cover;
+}
+h2{
+    color : #000;
+}
+h4{
+    color : #000;
+}
+.weather-info {
+    color : #fff;
+    margin-bottom: 20px;
+    background-color: #667a9caa;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto 200px;
+}
+.forecast {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #667a9caa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto 50px;
+}
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+.day:hover {
+    transform: scale(1.05);
+}
