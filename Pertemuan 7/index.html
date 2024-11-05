@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-mono bg-green-200 m-10 text-center">
+    <div class="bg-green-300 px-5 py-5 mr-20 ml-20 shadow-lg shadow-indigo-500/40">
+    <h1 class="text-3xl font-sans text-center font-bold mb-14">Aplikasi Buku Favorit</h1>
+
+    <!-- Input Nama Pengguna -->
+    <div id="session-container" class="mb-5">
+        <input class="mr-2.5 mb-4 px-5 py-2.5 rounded border border-solid border-black" type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" />
+        <button class="bg-sky-500 px-5 py-2.5 rounded border-2 border-solid border-black border-sky-700 cursor-pointer hover:bg-sky-600" id="btnSimpanNama">Simpan Nama</button>
+        <h3 class="mt-5" id="salamPengguna"></h3>
+    </div>
+    <h2 class="mb-5 text-2xl font-bold font-sans">Menambahkan Buku</h2>
+    <!-- Form Tambah Buku -->
+    <form id="form-tambah-buku" class="mr-5 mb-5">
+        <div>
+        <input class="ml-6 mb-4 pl-5 pr-8 py-2.5 rounded border border-solid border-black" type="text" id="judul" placeholder="Judul Buku" required /></div>
+        <div>
+        <input class="ml-6 mb-4 pl-5 pr-8 py-2.5 rounded border border-solid border-black" type="text" id="penulis" placeholder="Penulis" required /></div>
+        <div>
+        <input class="ml-6 mb-4 pl-5 pr-8 py-2.5 rounded border border-solid border-black" type="number" id="tahun" placeholder="Tahun Terbit" required /></div>
+        <button class="bg-sky-500 px-5 py-2.5 rounded border-2 border-solid border-black border-sky-700 cursor-pointer hover:bg-sky-600" type="submit">Tambah Buku</button>
+    </form>
+
+    <!-- Daftar Buku -->
+    <h2 class="mb-5 text-2xl font-bold font-sans mr-6">Daftar Buku</h2>
+    <div id="daftar-buku" class="p-3 border-2 border-solid border-slate-600 mr-40 ml-40"></div>
+
+    <!-- Buku Favorit -->
+    <h2 class="mb-5 mt-5 text-2xl font-bold font-sans">Buku Favorit</h2>
+    <div id="buku-favorit" class="p-2.5 border-2 border-solid border-slate-600 mr-40 ml-40"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
